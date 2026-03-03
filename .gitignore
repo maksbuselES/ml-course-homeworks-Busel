@@ -1,0 +1,40 @@
+# --- OS / editor ---
+.DS_Store
+*~
+*.swp
+
+# --- VS Code ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.vscode/ipch/
+
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- C/C++ build artifacts ---
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+build/
+cmake-build-*/
+
+# --- Bazel ---
+bazel-*
+/external
+
+# --- Qt generated (if you generate them in-source) ---
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+
+# --- Secrets (если используешь) ---
+.env
